@@ -27,23 +27,20 @@
     <!-- <meta property="og:url" content="https://www.ejemplo.com"> -->
     <!-- <meta property="og:image" content="https://www.ejemplo.com/imagen.png"> -->
   </head>
-  <body
-    class="bg-[url(./static/img1.jpg)] bg-cover bg-no-repeat text-amber-50"
-    style="font-family: 'Montserrat', sans-serif"
-  >
-    <header>
+  <body class="text-amber-50" style="font-family: 'Montserrat', sans-serif">
+    <header class="relative flex justify-center">
       <nav
-        class="flex mx-20 mt-10 px-4 py-3 justify-between bg-white/10 backdrop-blur-md rounded-full hover:bg-white/30 hover:scale-105 hover:transition-duration-500 hover:duration-300 group"
+        class="flex fixed top-10 w-[90vw] mx-auto z-50 p-4 justify-between bg-white/10 backdrop-blur-xl rounded-full hover:bg-white/30 hover:scale-105 transition-all hover:duration-300 group"
       >
         <img
           src="./static/band-aid-svgrepo-com.svg"
           alt="Band Aid Icon"
           class="w-10 h-10 group-hover:rotate-180 group-hover:duration-500 group-hover:transition"
         />
-        <div class="flex-row justify-around h-5 group">
-          <a href="# " class="px-2 group-hover:text-amber-700"> About</a>
-          <a href="#" class="px-2 group-hover:text-amber-700"> Community </a>
-          <a href="#" class="px-2 group-hover:text-amber-700"> Blog </a>
+        <div class="flex-row justify-around h-5 *:hover:text-amber-700">
+          <a href="# " class="px-2"> About</a>
+          <a href="#" class="px-2"> Community </a>
+          <a href="#" class="px-2"> Blog </a>
           <button
             class="px-2 rounded-3xl w-30 h-10 bg-red-500 group-hover:scale-110"
           >
@@ -52,19 +49,38 @@
         </div>
       </nav>
     </header>
-    <div class="static">
-      <div class="flex-col justify-between absolute bottom-10 left-20 w-200">
-        <h1 class="text-7xl mb-8">
-          Hundred of cards Endless possibilities Find the right one
-        </h1>
-        <p>Tired of searching through endless credit card options?</p>
-        <p>Let AI do the work for yout</p>
-        <button
-          class="mt-10 px-2 rounded-3xl w-30 h-10 bg-red-500 hover:scale-110 transition duration-500"
+    <main>
+      <section class="overflow-hidden">
+        <img
+        src="./static/img1.jpg"
+          class="relative object-cover w-full h-screen transition-all"
         >
-          Apply now
-        </button>
-      </div>
-    </div>
+          <div class="static">
+            <div
+              class="flex-col justify-between absolute bottom-10 left-20 *:block"             
+            >
+              <span class="text-7xl -ml-2">
+                Hundred of cards  
+              </span>
+              <span class="text-7xl -ml-2"> Endless possibilities</span>
+              <span class="text-7xl -ml-2">Find the right one</span>
+              <p>Tired of searching through endless credit card options?</p>
+              <p>Let AI do the work for you</p>
+              <button
+                class="mt-10 px-2 rounded-3xl w-30 h-10 bg-red-500 hover:scale-110 transition duration-500"
+              >
+                Apply now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section >
+      <section class="text-slate-900">
+        <h2 class>Cardfind simplifies the card-hunting process</h2>
+      <p>Powered by AI, Cardfind breaks down complex credit card choices into simple, personalized recomendations - helping you pick the right card, every time </p>
+      </section>
+        
+
+    </main>
   </body>
 </html>
