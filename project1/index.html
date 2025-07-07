@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Descripción breve del sitio web." />
+    <meta name="author" content="Tu Nombre o Compañía" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Landing Page 1</title>
+
+    <!-- Open Graph (to share in social media) -->
+    <meta property="og:title" content="Tailwind Project 1" />
+    <meta
+      property="og:description"
+      content="Landing Page 1 using Tailwind CSS"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://www.ejemplo.com"> -->
+    <!-- <meta property="og:image" content="https://www.ejemplo.com/imagen.png"> -->
+  </head>
+  <body
+    class="bg-[url(./static/img1.jpg)] bg-cover bg-no-repeat text-amber-50"
+    style="font-family: 'Montserrat', sans-serif"
+  >
+    <header>
+      <nav
+        class="flex mx-20 mt-10 px-4 py-3 justify-between bg-white/10 backdrop-blur-md rounded-full hover:bg-white/30 hover:scale-105 hover:transition-duration-500 hover:duration-300 group"
+      >
+        <img
+          src="./static/band-aid-svgrepo-com.svg"
+          alt="Band Aid Icon"
+          class="w-10 h-10 group-hover:rotate-180 group-hover:duration-500 group-hover:transition"
+        />
+        <div class="flex-row justify-around h-5 group">
+          <a href="# " class="px-2 group-hover:text-amber-700"> About</a>
+          <a href="#" class="px-2 group-hover:text-amber-700"> Community </a>
+          <a href="#" class="px-2 group-hover:text-amber-700"> Blog </a>
+          <button
+            class="px-2 rounded-3xl w-30 h-10 bg-red-500 group-hover:scale-110"
+          >
+            Apply Now
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="static">
+      <div class="flex-col justify-between absolute bottom-10 left-20 w-200">
+        <h1 class="text-7xl mb-8">
+          Hundred of cards Endless possibilities Find the right one
+        </h1>
+        <p>Tired of searching through endless credit card options?</p>
+        <p>Let AI do the work for yout</p>
+        <button
+          class="mt-10 px-2 rounded-3xl w-30 h-10 bg-red-500 hover:scale-110 transition duration-500"
+        >
+          Apply now
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
