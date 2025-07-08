@@ -27,10 +27,10 @@
     <!-- <meta property="og:url" content="https://www.ejemplo.com"> -->
     <!-- <meta property="og:image" content="https://www.ejemplo.com/imagen.png"> -->
   </head>
-  <body class="text-amber-50" style="font-family: 'Montserrat', sans-serif">
-    <header class="relative flex justify-center">
+  <body  style="font-family: 'Montserrat', sans-serif">
+    <header class=" text-amber-50 relative flex justify-center">
       <nav
-        class="flex fixed top-10 w-[90vw] mx-auto z-50 p-4 justify-between bg-white/10 backdrop-blur-xl rounded-full hover:bg-white/30 hover:scale-105 transition-all hover:duration-300 group"
+        class="flex fixed top-10 w-[90vw] mx-auto z-50 p-4 justify-between bg-white/10 backdrop-blur-xl rounded-full hover:bg-white/30 hover:scale-105 transition-all hover:duration-300 hover:shadow-2xl group"
       >
         <img
           src="./static/band-aid-svgrepo-com.svg"
@@ -50,10 +50,10 @@
       </nav>
     </header>
     <main>
-      <section class="overflow-hidden">
+      <section class="overflow-hidden text-amber-50">
         <img
         src="./static/img1.jpg"
-          class="relative object-cover w-full h-screen transition-all"
+          class="relative object-cover w-screen h-screen transition-all"
         >
           <div class="static">
             <div
@@ -67,7 +67,7 @@
               <p>Tired of searching through endless credit card options?</p>
               <p>Let AI do the work for you</p>
               <button
-                class="mt-10 px-2 rounded-3xl w-30 h-10 bg-red-500 hover:scale-110 transition duration-500"
+                class="mt-10 px-2 rounded-3xl w-30 h-10 bg-red-500 hover:scale-110 hover:shadow-xl transition duration-500"
               >
                 Apply now
               </button>
@@ -75,12 +75,61 @@
           </div>
         </div>
       </section >
-      <section class="text-slate-900">
-        <h2 class>Cardfind simplifies the card-hunting process</h2>
-      <p>Powered by AI, Cardfind breaks down complex credit card choices into simple, personalized recomendations - helping you pick the right card, every time </p>
-      </section>
+      <section >
+      <div class=" flex justify-between items-center m-20 ">
+        <h2 class="text-5xl w-140">Cardfind simplifies the card-hunting process</h2>
+        <p class="w-118 text-slate-400 text-sm ">Powered by AI, Cardfind breaks down complex credit card choices into simple, personalized recomendations - helping you pick the right card, every time </p>
+      </div>
         
-
+      
+      <div class="flex md:flex-row flex-col m-20 justify-start  *:min-w-52 *:max-w-120  text-wrap gap-10">
+        <div class="px-3 flex flex-col bg-zinc-100 justify-between rounded-lg grow ">
+          <h1 class="pr-3 text-7xl font-bold  text-red-500 text-end">1</h1>
+          <span class="my-2 text-lg">Understand your goals</span>
+          <p class="text-sm mb-2">Tell us what matters most - cashback, travel, rewards, or low interest - and we'll start from there</p>
+        </div>
+       
+        <div class="px-3 flex flex-col ">
+          <h1 class="pr-3 text-7xl font-bold text-red-500 text-end">2</h1>
+          <span class="my-2 text-lg">Smart analysis begins</span>
+        </div>
+       
+        <div class="px-3 flex flex-col ">
+          <h1 class="pr-3 text-7xl font-bold text-red-500 text-end">3</h1>
+          <span class="my-2 text-lg">Personalized matches</span>
+        </div>
+       
+        <div class="px-3 flex flex-col  ">
+          <h1 class="pr-3 text-7xl font-bold text-red-500 text-end">4</h1>
+          <span class="my-2 text-lg">Compare with confidence</span>
+        </div>
+        <div class="px-3 flex flex-col  ">
+          <h1 class="pr-3 text-7xl font-bold text-red-500 text-end">5</h1>
+          <span class="my-2 text-lg">Apply faster</span>
+        </div>
+       </div>
+        
+       </div>
+      </div>
+    </section>
+    <section class="flex flex-row m-20 justify-between  gap-x-10">
+      <div class="max-w-2/5 flex flex-col *:my-2 *:mt-5 *:border-b-1 *:border-slate-100">
+        <div>
+          <h2 class="text-5xl  flex">Cardfind simplifies the search for your perfect card</h2>
+          <span class="mt-15 text-lg flex w-50 gap-2">
+            <div class="text-red-500 w-15 h-0.5 flex-1"></div>
+            Low-Interest Cards
+          </span>
+          <p class="text-sm">Save more with cards that offer the lowest interest rates.</p>  
+        </div>        
+        <span class="text-md">Cashback rewards</span>
+        <span class="text-md">Travel & Miles Cards</span>
+        <span class="text-md">Student Cards</span>
+      </div>
+      <div>
+        <img src="./static/img2.jpg" alt="" class="object-cover w-130 h-130 rounded-lg shadow-lg" />
+      </div>
+    </section>
     </main>
   </body>
 </html>
